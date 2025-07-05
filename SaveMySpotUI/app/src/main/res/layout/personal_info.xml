@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="33dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/back_arrow"/>
+
+        <!-- Header Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Personal Information"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Image -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/voice_assistant" />
+
+        <!-- Expandable Section 1 -->
+        <LinearLayout
+            android:id="@+id/expandableSection1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/expandButton1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#D9D7D7"
+                android:textSize="16dp"
+                android:textColor="@android:color/black"
+                android:text="Papa Bear                                                     ╲╱" />
+
+            <LinearLayout
+                android:id="@+id/personalContent1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:paddingTop="8dp">
+
+                <EditText
+                    android:id="@+id/firstName1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="6pt"
+                    android:hint="First Name" />
+
+                <EditText
+                    android:id="@+id/middleName1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="6pt"
+                    android:hint="Middle Name" />
+
+                <EditText
+                    android:id="@+id/lastName1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="6pt"
+                    android:hint="Last Name" />
+
+                <EditText
+                    android:id="@+id/email1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:textSize="6pt"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/mobile1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="6pt"
+                    android:hint="Mobile Number"
+                    android:inputType="phone" />
+
+                <Spinner
+                    android:id="@+id/gender1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="4dp"
+                    android:hint="Gender"
+                    android:entries="@array/gender_array" />
+
+                <EditText
+                    android:id="@+id/dateOfBirth1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Date of Birth"
+                    android:inputType="date"
+                    android:textSize="6pt"
+                    android:focusable="false"
+                    android:clickable="true"/>
+
+                <EditText
+                    android:id="@+id/address1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="6pt"
+                    android:hint="Address" />
+
+                <EditText
+                    android:id="@+id/passportNumber1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="6pt"
+                    android:hint="Passport Number" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Expandable Section 2 -->
+        <LinearLayout
+            android:id="@+id/expandableSection2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/expandButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#D9D7D7"
+                android:textSize="16dp"
+                android:textColor="@android:color/black"
+                android:text="Mama Bear                                                     ╲╱" />
+
+            <LinearLayout
+                android:id="@+id/personalContent2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:paddingTop="8dp">
+
+                <EditText
+                    android:id="@+id/firstName2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="6pt"
+                    android:hint="First Name" />
+
+                <EditText
+                    android:id="@+id/middleName2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="6pt"
+                    android:hint="Middle Name" />
+
+                <EditText
+                    android:id="@+id/lastName2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="6pt"
+                    android:hint="Last Name" />
+
+                <EditText
+                    android:id="@+id/email2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:textSize="6pt"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/mobile2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="6pt"
+                    android:hint="Mobile Number"
+                    android:inputType="phone" />
+
+                <Spinner
+                    android:id="@+id/gender2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="6pt"
+                    android:hint="Gender"
+                    android:entries="@array/gender_array" />
+
+                <EditText
+                    android:id="@+id/dateOfBirth2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Date of Birth"
+                    android:inputType="date"
+                    android:textSize="6pt" />
+
+                <EditText
+                    android:id="@+id/address2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="6pt"
+                    android:hint="Address" />
+
+                <EditText
+                    android:id="@+id/passportNumber2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="6pt"
+                    android:hint="Passport Number" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:weightSum="1">
+
+                <!-- Add Button (Far Left) -->
+                <ImageButton
+                    android:id="@+id/image_button"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/add_circle"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="0" /> <!-- No weight to keep it on the far left -->
+
+                <!-- Empty space to push buttons to the right -->
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <!-- Edit Button (Grey) -->
+                <Button
+                    android:id="@+id/edit_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit"
+                    android:backgroundTint="@android:color/darker_gray"
+                    android:textColor="@android:color/white"
+                    android:layout_marginEnd="8dp"
+                    android:layout_gravity="end" />
+
+                <!-- Save Button (Teal) -->
+                <Button
+                    android:id="@+id/save_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:backgroundTint="@color/teal_button"
+                    android:textColor="@android:color/white"
+                    android:layout_marginEnd="8dp"
+                    android:layout_gravity="end" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
